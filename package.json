@@ -1,7 +1,7 @@
 {
   "name": "pih-frontend",
   "scripts": {
-    "build": "packmap -o openmrs/frontend --override-map import-map-overrides.json; ln -s $(realpath assets) openmrs/frontend/"
+    "build": "packmap -o openmrs/frontend --override-map override-import-map.json; ln -s $(realpath assets) openmrs/frontend/"
   },
   "license": "MPL-2.0",
   "devDependencies": {
@@ -15,15 +15,16 @@
     "@openmrs/esm-login": "^1.2.0",
     "@openmrs/esm-module-config": "^1.1.1",
     "@openmrs/esm-primary-navigation": "^1.0.0",
+    "@openmrs/esm-root-config": "^1.2.0",
     "@openmrs/esm-styleguide": "^1.2.0",
-    "@pih/esm-root-config": "^2.0.1",
-    "i18next": "^19.0.1",
+    "@pih/esm-root-config": "^2.0.4",
+    "i18next": "^19.0.2",
     "import-map-overrides": "1.9.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-i18next": "^11.2.5",
+    "react-i18next": "^11.2.7",
     "rxjs": "^6.5.3",
-    "single-spa": "^4.4.1",
+    "single-spa": "^4.4.2",
     "systemjs": "6.1.7"
   }
 }
