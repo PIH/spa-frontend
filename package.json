@@ -4,9 +4,6 @@
     "build": "packmap -o openmrs/frontend --override-map override-import-map.json; ln -s $(realpath assets) openmrs/frontend/"
   },
   "license": "MPL-2.0",
-  "devDependencies": {
-    "packmap": "file:../packmap"
-  },
   "dependencies": {
     "@openmrs/esm-api": "^1.2.2",
     "@openmrs/esm-devtools": "^1.1.0",
@@ -26,5 +23,8 @@
     "rxjs": "^6.5.3",
     "single-spa": "^4.4.2",
     "systemjs": "6.1.7"
+  },
+  "devDependencies": {
+    "packmap": "^1.1.1"
   }
 }
