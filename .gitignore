@@ -2,3 +2,5 @@ dist
 node_modules
 openmrs
 *.zip
+.idea
+*.iml
