@@ -2,9 +2,8 @@
   "imports": {
     "@openmrs/esm-error-handling": "/openmrs/frontend/@openmrs/esm-error-handling@1.1.0/dist/openmrs-esm-error-handling.js",
     "@openmrs/@esm-error-handling": "/openmrs/frontend/@openmrs/esm-error-handling@1.1.0/dist/openmrs-esm-error-handling.js",
-    "@openmrs/esm-root-config-bak": "/openmrs/frontend/@openmrs/esm-root-config@1.2.0/dist/openmrs-esm-root-config.defaults.js",
     "@openmrs/esm-root-config": "/openmrs/frontend/@pih/esm-root-config@2.0.4/dist/pih-esm-root-config.js",
-    "i18next": "/openmrs/frontend/i18next@19.0.2/dist/umd/i18next.min.js",
-    "react-i18next": "/openmrs/frontend/react-i18next@11.2.7/dist/umd/react-i18next.min.js"
+    "i18next": "/openmrs/frontend/i18next@19.0.3/dist/umd/i18next.min.js",
+    "react-i18next": "/openmrs/frontend/react-i18next@11.3.1/dist/umd/react-i18next.min.js"
   }
 }
