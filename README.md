@@ -5,7 +5,8 @@
 ```
 npm install
 npm run build
-ln -s $(realpath openmrs/frontend) ~/openmrs/my-server/frontend
+rm -rf ~/openmrs/<my-server>/frontend  # or move it to a backup
+ln -s $(realpath openmrs/frontend) ~/openmrs/<my-server>/frontend
 ```
 
 ## Setting up SPA in PIH EMR
