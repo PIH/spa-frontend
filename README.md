@@ -1,5 +1,14 @@
 # PIH EMR SPA Frontend
 
+This repository contains everything needed to set up the PIH Single-SPA
+frontend.
+
+The `package.json` is a manifest for building it. First you use `npm install`
+to download all the pieces. Then, `npm run build` uses
+[Packmap](https://github.com/openmrs/packmap) to bundle it all together.
+The result is a directory that can be used as the `frontend` subdirectory
+of your OpenMRS server's application data directory.
+
 ## Quick Instructions
 
 ```
