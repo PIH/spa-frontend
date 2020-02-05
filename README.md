@@ -18,6 +18,13 @@ rm -rf ~/openmrs/<my-server>/frontend  # or move it to a backup
 ln -s $(realpath openmrs/frontend) ~/openmrs/<my-server>/frontend
 ```
 
+### Running all modules from master
+
+If you want to develop against a local server which has the latest commit of all 
+modules, as one would expect from a CI server, run `./dev-install.sh`. You will
+need to re-run that scipt to download new updates. `package.json` will continue 
+to point to released versions.
+
 ## Setting up SPA in PIH EMR
 
 1. Make sure the [SPA OpenMRS Module](https://github.com/openmrs/openmrs-module-spa/)
