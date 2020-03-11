@@ -7,7 +7,7 @@
   },
   "license": "MPL-2.0",
   "dependencies": {
-    "@openmrs/esm-api": "^1.2.2",
+    "@openmrs/esm-api": "^1.3.0",
     "@openmrs/esm-devtools": "^1.1.0",
     "@openmrs/esm-error-handling": "^1.1.0",
     "@openmrs/esm-home": "^1.0.0",
@@ -18,11 +18,11 @@
     "@openmrs/esm-styleguide": "^1.3.0",
     "@pih/esm-root-config": "^2.0.4",
     "i18next": "^19.0.3",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-i18next": "^11.3.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-i18next": "^11.3.3",
     "rxjs": "^6.5.4",
-    "single-spa": "^4.4.3"
+    "single-spa": "^5.1.1"
   },
   "devDependencies": {
     "bestzip": "^2.1.5",
