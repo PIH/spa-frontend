@@ -1,0 +1,92 @@
+{
+  "@openmrs/esm-login": {
+    "logo": {
+      "src": "https://cdn-images-1.medium.com/max/604/1*EpiG9w6Kl8vaMGysSIAmbA@2x.png",
+      "alt": "Partners in Health"
+    },
+    "links": {
+      "loginSuccess": {
+        "url": "/mirebalais/home.page",
+        "spa": false
+      }
+    }
+  },
+  "@openmrs/esm-home": {
+    "buttons": {
+      "enabled": true,
+      "list": [
+        {
+          "label": "Active Visits",
+          "link": {
+            "spa": false,
+            "url": "/openmrs/coreapps/activeVisits.page?app=coreapps.activeVisits"
+          },
+          "requiredPrivilege": "App: coreapps.activeVisits"
+        },
+        {
+          "label": "Register Patient",
+          "link": {
+            "spa": false,
+            "url": "/openmrs/registrationapp/registerPatient.page?appId=referenceapplication.registrationapp.registerPatient"
+          },
+          "requiredPrivilege": "App: registrationapp.registerPatient"
+        },
+        {
+          "label": "Capture Vitals",
+          "link": {
+            "spa": false,
+            "url": "/openmrs/coreapps/findpatient/findPatient.page?app=referenceapplication.vitals"
+          },
+          "requiredPrivilege": "App: referenceapplication.vitals"
+        },
+        {
+          "label": "Appointment Scheduling",
+          "link": {
+            "spa": false,
+            "url": "/openmrs/appointmentschedulingui/home.page"
+          },
+          "requiredPrivilege": "App: appointmentschedulingui.home"
+        },
+        {
+          "label": "Referrals Queue",
+          "link": {
+            "spa": true,
+            "url": "/referrals-queue"
+          }
+        },
+        {
+          "label": "Reports",
+          "link": {
+            "spa": false,
+            "url": "/openmrs/reportingui/reportsapp/home.page"
+          },
+          "requiredPrivilege": "View Reports"
+        },
+        {
+          "label": "Data Management",
+          "link": {
+            "spa": false,
+            "url": "/openmrs/coreapps/datamanagement/dataManagement.page"
+          },
+          "requiredPrivilege": "App: coreapps.dataManagement"
+        },
+        {
+          "label": "Configure Metadata",
+          "link": {
+            "spa": false,
+            "url": "/openmrs/adminui/metadata/configureMetadata.page"
+          },
+          "requiredPrivilege": "App: coreapps.configuremetadata"
+        },
+        {
+          "label": "System Administration",
+          "link": {
+            "spa": false,
+            "url": "/openmrs/coreapps/systemadministration/systemAdministration.page"
+          },
+          "requiredPrivilege": "App: coreapps.systemAdministration"
+        }
+      ]
+    }
+  }
+}

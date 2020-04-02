@@ -1,0 +1,63 @@
+{
+  "name": "@pih/esm-root-config",
+  "version": "2.0.4",
+  "description": "The single-spa root config for PIH",
+  "main": "dist/pih-esm-root-config.js",
+  "scripts": {
+    "test": "jest",
+    "typescript": "tsc --resolveJsonModule --esModuleInterop",
+    "start": "webpack-dev-server",
+    "start-https": "webpack-dev-server --https",
+    "lint": "eslint . --ext ts",
+    "prettier": "prettier --write './**'",
+    "build": "webpack",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pih/pih-esm-root-config.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && concurrently -n lint,typescript 'npm run lint' 'npm run typescript'"
+    }
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pih/pih-esm-root-config/issues"
+  },
+  "homepage": "https://github.com/pih/pih-esm-root-config#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@openmrs/esm-root-config": "^1.2.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-important-stuff": "^1.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.2",
+    "jest": "^25.1.0",
+    "jest-cli": "^25.1.0",
+    "prettier": "^2.0.2",
+    "pretty-quick": "^2.0.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@openmrs/esm-module-config": "^1.1.1",
+    "@types/jest": "^25.1.2",
+    "@types/systemjs": "^6.1.0",
+    "single-spa": "^5.2.1"
+  }
+}
