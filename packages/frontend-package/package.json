@@ -1,5 +1,6 @@
 {
   "name": "pih-frontend",
+  "private": true,
   "version": "3.0.1",
   "scripts": {
     "build": "packmap -o openmrs/frontend --override-map override-import-map.json; ln -s $(realpath assets) openmrs/frontend/",
