@@ -4,6 +4,7 @@
     "@openmrs/@esm-error-handling": "/openmrs/frontend/@openmrs/esm-error-handling@1.1.0/dist/openmrs-esm-error-handling.js",
     "@openmrs/esm-root-config": "/openmrs/frontend/@pih/esm-root-config@3.0.2/dist/pih-esm-root-config.js",
     "i18next": "/openmrs/frontend/i18next@19.3.4/dist/umd/i18next.min.js",
-    "react-i18next": "/openmrs/frontend/react-i18next@11.3.4/dist/umd/react-i18next.min.js"
+    "react-i18next": "/openmrs/frontend/react-i18next@11.3.4/dist/umd/react-i18next.min.js",
+    "config-file": "/openmrs/frontend/assets/config.json"
   }
 }
