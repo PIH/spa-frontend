@@ -53,8 +53,8 @@ create a release with those changes.
 1. `npm install my-module@latest`
 1. Do `npm run build` and verify in your browser that nothing broke
 1. `cd ../..` to go back to the root directory of this repository
-1. Do `lerna version <major|minor|patch>` as appropriate
-1. Push to master with `--tags`. Your changes will be picked up by the
+1. Do `lerna publish` to version and publish the packages.
+   Your changes will be picked up by the
    [Bamboo CI job](https://bamboo.pih-emr.org/browse/MFE-MFE-17).
    The release artifact will be in
    [spa-repo/pih-spa-frontend/unstable](http://bamboo.pih-emr.org/spa-repo/pih-spa-frontend/unstable/).

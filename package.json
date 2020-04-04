@@ -6,6 +6,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna build"
+    "build": "lerna build",
+    "publish": "lerna publish"
   }
 }
