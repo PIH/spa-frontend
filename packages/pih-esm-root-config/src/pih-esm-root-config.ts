@@ -1,5 +1,8 @@
 import { start, registerApplication } from "single-spa";
-import { registerAllCoreApplications } from "@openmrs/esm-root-config";
+import {
+  registerAllCoreApplications,
+  promiseBeforeStart,
+} from "@openmrs/esm-root-config";
 
 registerAllCoreApplications();
 registerApplication(
@@ -8,4 +11,7 @@ registerApplication(
   (location) => location.pathname.includes("/referrals-queue")
 );
 
-start();
+promiseBeforeStart.then(start).catch((err) => {
+  console.error(`Failed to initialize i18next translations`);
+  console.error(err);
+});
