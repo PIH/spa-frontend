@@ -1,5 +1,7 @@
 import { routePrefix, routeRegex } from "@openmrs/esm-root-config";
 
+/* We define the MFEs we want to include, each with an _activity function_
+ *   (see https://single-spa.js.org/docs/configuration/#activity-function) */
 export const applications = {
   "@openmrs/esm-login": shouldShowLogin,
   "@openmrs/esm-devtools": shouldShowDevtools,
