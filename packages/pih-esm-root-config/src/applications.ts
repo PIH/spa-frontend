@@ -30,5 +30,5 @@ function shouldShowNavbar() {
 }
 
 function shouldShowReferralsQueue(location) {
-  location.pathname.includes("/referrals-queue");
+  return routePrefix("referrals-queue", location);
 }
