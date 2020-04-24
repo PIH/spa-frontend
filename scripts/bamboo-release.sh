@@ -12,6 +12,9 @@
 # - XX is the spa-frontend commit number in master
 # - YY is the config repo commit number in master
 
+set -o xtrace  # print each command
+set -e         # die on error
+
 if [ "${SITE}" == "" ]; then
     echo "ERROR: Environment variable 'SITE' must be defined. e.g. SITE=zl"
     exit 1
@@ -19,6 +22,7 @@ fi
 
 cd "$(dirname "$0")/../packages/frontend-package" # cd to frontend-package
 
+#=== Define paths
 package_commit_number=$(git rev-list HEAD --count)
 config_commit_number=$(cd ../../../openmrs-config-${SITE}; git rev-list HEAD --count)
 target_dir="/var/www/html/spa-repo/pih-spa-frontend"
@@ -26,9 +30,10 @@ target_filename="pih-spa-${SITE}-${package_commit_number}-${config_commit_number
 target_path="${target_dir}/${target_filename}"
 latest_path="${target_dir}/pih-spa-${SITE}-latest.zip"
 
+#=== Copy
 cp pih-spa*.zip ${target_path}
 
-# Add VERSION file
+#=== Add VERSION file
 package_commit_hash=$(git log -n1 --format=format:'%H')
 config_commit_hash=$(cd ../../../openmrs-config-${SITE}; git log -n1 --format=format:'%H')
 echo "${target_filename}" > VERSION
@@ -38,6 +43,6 @@ mkdir -p openmrs/frontend/
 mv VERSION openmrs/frontend/
 zip -u ${target_path} openmrs/frontend/VERSION
 
-# Update 'latest'
+#=== Update 'latest'
 rm -rf ${latest_path}
 ln -s ${target_path} ${latest_path}
