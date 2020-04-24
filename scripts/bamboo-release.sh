@@ -17,6 +17,8 @@ if [ "${SITE}" == "" ]; then
     exit 1
 fi
 
+cd "$(dirname "$0")/../packages/frontend-package" # cd to frontend-package
+
 package_commit_number=$(git rev-list HEAD --count)
 config_commit_number=$(cd ../../../openmrs-config-${SITE}; git rev-list HEAD --count)
 target_dir="/var/www/html/spa-repo/pih-spa-frontend"
