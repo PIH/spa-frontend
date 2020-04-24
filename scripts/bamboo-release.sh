@@ -30,9 +30,6 @@ target_filename="pih-spa-${SITE}-${package_commit_number}-${config_commit_number
 target_path="${target_dir}/${target_filename}"
 latest_path="${target_dir}/pih-spa-${SITE}-latest.zip"
 
-#=== Copy
-cp pih-spa*.zip ${target_path}
-
 #=== Add VERSION file
 package_commit_hash=$(git log -n1 --format=format:'%H')
 config_commit_hash=$(cd ../../../openmrs-config-${SITE}; git log -n1 --format=format:'%H')
@@ -41,7 +38,11 @@ echo "pih/spa-frontend @ ${package_commit_hash}" >> VERSION
 echo "openmrs-config-${SITE} @ ${config_commit_hash}" >> VERSION
 mkdir -p openmrs/frontend/
 mv VERSION openmrs/frontend/
-zip -u ${target_path} openmrs/frontend/VERSION
+zip -u pih-spa.zip openmrs/frontend/VERSION
+
+#=== Copy
+cp pih-spa.zip ${target_filename}  # for Bamboo artifact
+cp pih-spa.zip ${target_path}      # for distribution
 
 #=== Update 'latest'
 rm -rf ${latest_path}
