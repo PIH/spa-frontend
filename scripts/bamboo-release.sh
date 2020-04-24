@@ -15,7 +15,7 @@
 set -o xtrace  # print each command
 set -e         # die on error
 
-if [ "${SITE}" == "" ]; then
+if [ "${SITE}" = "" ]; then
     echo "ERROR: Environment variable 'SITE' must be defined. e.g. SITE=zl"
     exit 1
 fi
