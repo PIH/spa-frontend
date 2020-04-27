@@ -4,7 +4,7 @@
   "version": "3.0.4",
   "scripts": {
     "build": "packmap -o openmrs/frontend --override-map override-import-map.json && ln -s $(readlink -f assets) openmrs/frontend/",
-    "zip": "bestzip pih-spa-${npm_package_version}.zip openmrs/frontend/"
+    "zip": "bestzip pih-spa.zip openmrs/frontend/"
   },
   "license": "MPL-2.0",
   "dependencies": {
