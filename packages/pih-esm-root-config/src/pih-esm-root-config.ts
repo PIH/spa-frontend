@@ -13,4 +13,5 @@ Object.keys(applications).forEach((appName) => {
 promiseBeforeStart.then(start).catch((err) => {
   console.error(`Failed to initialize i18next translations`);
   console.error(err);
+  start();
 });
