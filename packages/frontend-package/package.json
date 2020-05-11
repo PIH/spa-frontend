@@ -29,6 +29,6 @@
   "devDependencies": {
     "bestzip": "^2.1.5",
     "lerna": "^3.20.2",
-    "@pih/packmap": "^1.2.0"
+    "packmap": "^1.3.0"
   }
 }
