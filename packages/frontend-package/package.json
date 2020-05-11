@@ -3,8 +3,8 @@
   "private": true,
   "version": "3.0.4",
   "scripts": {
-    "build": "packmap -o openmrs/frontend --override-map override-import-map.json && ln -s $(readlink -f assets) openmrs/frontend/",
-    "zip": "bestzip pih-spa.zip openmrs/frontend/"
+    "build": "packmap -o frontend --override-map override-import-map.json --base-url=/mirebalais && ln -s $(readlink -f assets) frontend/",
+    "zip": "mkdir openmrs && mv frontend openmrs/ && bestzip pih-spa.zip openmrs/frontend/"
   },
   "license": "MPL-2.0",
   "dependencies": {
@@ -29,6 +29,6 @@
   "devDependencies": {
     "bestzip": "^2.1.5",
     "lerna": "^3.20.2",
-    "packmap": "^1.1.1"
+    "packmap": "^1.3.0"
   }
 }
