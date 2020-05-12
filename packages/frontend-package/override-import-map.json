@@ -2,7 +2,7 @@
   "imports": {
     "@openmrs/esm-error-handling": "/mirebalais/frontend/@openmrs/esm-error-handling@1.1.0/dist/openmrs-esm-error-handling.js",
     "@openmrs/@esm-error-handling": "/mirebalais/frontend/@openmrs/esm-error-handling@1.1.0/dist/openmrs-esm-error-handling.js",
-    "@openmrs/esm-root-config": "/mirebalais/frontend/@pih/esm-root-config@3.0.4/dist/pih-esm-root-config.js",
+    "@openmrs/esm-root-config": "/mirebalais/frontend/@pih/esm-root-config@3.0.5/dist/pih-esm-root-config.js",
     "i18next": "/mirebalais/frontend/i18next@19.3.4/dist/umd/i18next.min.js",
     "react-i18next": "/mirebalais/frontend/react-i18next@11.3.4/dist/umd/react-i18next.min.js",
     "config-file": "/mirebalais/frontend/assets/config.json"
