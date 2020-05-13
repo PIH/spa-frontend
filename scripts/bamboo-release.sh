@@ -22,6 +22,11 @@ fi
 
 cd "$(dirname "$0")/../packages/frontend-package" # cd to frontend-package
 
+npm run preprocess-overrides
+npm run build
+npm run link-assets
+npm run zip
+
 #=== Define paths
 package_commit_number=$(git rev-list HEAD --count)
 config_commit_number=$(cd ../../../openmrs-config-${SITE}; git rev-list HEAD --count)
