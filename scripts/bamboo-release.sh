@@ -27,11 +27,16 @@ echo BASE_URL=${BASE_URL}
 
 cd "$(dirname "$0")/../packages/frontend-package" # cd to frontend-package
 
+#=== Cleanup if necessary
+rm -rf openmrs
+rm -rf frontend
+rm -rf *.zip
+
 #=== Define paths
 package_commit_number=$(git rev-list HEAD --count)
 config_commit_number=$(cd ../../../openmrs-config-${SITE}; git rev-list HEAD --count)
 target_dir="/var/www/html/spa-repo/pih-spa-frontend"
-base_url_infix=$( [ ${BASE_URL} = "openmrs" ] && echo "" || echo -${BASE_URL} )
+base_url_infix=$( [ "${BASE_URL}" = "openmrs" ] && echo "" || echo -${BASE_URL} )
 target_filename="pih-spa-${SITE}${base_url_infix}-${package_commit_number}-${config_commit_number}.zip"
 target_path="${target_dir}/${target_filename}"
 latest_path="${target_dir}/pih-spa-${SITE}${base_url_infix}-latest.zip"
