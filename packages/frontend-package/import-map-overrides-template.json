@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "@openmrs/esm-error-handling": "/${baseUrl}/frontend/@openmrs/esm-error-handling@1.1.0/dist/openmrs-esm-error-handling.js",
+    "@openmrs/@esm-error-handling": "/${baseUrl}/frontend/@openmrs/esm-error-handling@1.1.0/dist/openmrs-esm-error-handling.js",
+    "@openmrs/esm-root-config": "/${baseUrl}/frontend/@pih/esm-root-config@3.0.5/dist/pih-esm-root-config.js",
+    "i18next": "/${baseUrl}/frontend/i18next@19.3.4/dist/umd/i18next.min.js",
+    "react-i18next": "/${baseUrl}/frontend/react-i18next@11.3.4/dist/umd/react-i18next.min.js",
+    "config-file": "/${baseUrl}/frontend/assets/config.json"
+  }
+}

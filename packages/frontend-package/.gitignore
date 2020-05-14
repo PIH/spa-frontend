@@ -4,3 +4,5 @@ openmrs
 *.zip
 .idea
 *.iml
+import-map-overrides.json
+frontend
