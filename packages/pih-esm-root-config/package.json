@@ -1,6 +1,6 @@
 {
   "name": "@pih/esm-root-config",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "The single-spa root config for PIH",
   "main": "dist/pih-esm-root-config.js",
   "scripts": {
