@@ -51,13 +51,23 @@ create a release with those changes.
 1. [Version and release](https://wiki.openmrs.org/display/projects/Versioning+and+Publishing+Packages) that module
 1. `cd packages/frontend-package`
 1. `npm install my-module@latest`
-1. Do `npm run build` and verify in your browser that nothing broke
+1. Verify in your browser that nothing broke (see below)
+1. Commit your changes
 1. `cd ../..` to go back to the root directory of this repository
 1. Do `lerna publish` to version and publish the packages.
    Your changes will be picked up by the
    [Bamboo CI job](https://bamboo.pih-emr.org/browse/MFE-MFE-17).
    The release artifact will be in
    [spa-repo/pih-spa-frontend/unstable](http://bamboo.pih-emr.org/spa-repo/pih-spa-frontend/unstable/).
+
+### Checking the SPA package locally
+
+You can examine the app contained in a package locally like this:
+
+1. Run `npm package` to build the zip file
+2. Unzip the package
+3. Copy its `frontend/` directory into your server's `configuration/` directory
+4. Open your browser and check it out
 
 ### Running all modules from master
 
