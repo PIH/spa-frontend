@@ -60,5 +60,6 @@
     "@types/jest": "^25.1.2",
     "@types/systemjs": "^6.1.0",
     "single-spa": "^5.2.1"
-  }
+  },
+  "gitHead": "7c7024974baa75bdad9cd51348fbfe0572beabe4"
 }
