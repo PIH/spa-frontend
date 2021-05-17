@@ -1,4 +1,9 @@
-# PIH EMR SPA Frontend
+# DEPRECATED - PIH EMR SPA Frontend
+
+All this is no longer necessary. The frontend has been integrated with the rest of the
+PIH EMR distribution. The configs live in the site config repositories.
+
+# Old docs
 
 This repository is the basis for the the PIH Single-SPA frontend.
 
